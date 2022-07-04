@@ -16,7 +16,7 @@
             <section class="header__barra centrar_texto">
                 <div class="logo">
                     <a href="index.html" class="logo_titulo">
-                        <h1 class="no-margin titulo">Sabor<span class="logo__bold">Tropical</span><i class="fas fa-tree-palm"></i></h1>
+                        <h1 class="no-margin titulo">Sabor<span class="logo__bold">Tropical</span></h1>
                     </a>
                 </div>  
                 <nav class="navegacion">
@@ -31,32 +31,58 @@
     </header>
     <main class="contenedor bg-white">
         <div class="row">
-            <div class="col-md-8 mx-auto">
-                <div class="card bg-secondary text-white rounded">
-                    <div class="card-header">
-                        <h2 class="display-3 text-center fw-bold">Contáctenos</h2>
+            <div class="col col-md-8 mx-auto ">
+                <form class="card p-4 bg-light text-center p-3 shadow-lg border-0">
+                    <div class="form-group">
+                      <h4 class="texto_titulo">Nombres</h4>
+                      <input type="text" class="form-control size_input" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="nombre" class="lbltitle">Nombre y Apellidos</label>
-                            <input type="text"  placeholder="Nombre" class="form-control inputs">
+                    <div class="form-group">
+                        <h4 class="texto_titulo">Apellidos</h4>
+                        <input type="text" class="form-control size_input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="form-group">
+                        <h4 class="texto_titulo">Correo</h4>
+                        <input type="email" class="form-control size_input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="form-group">
+                        <h4 class="texto_titulo">Comentario</h4>
+                        <textarea class="form-control size_input" rows="10"></textarea>
+                      </div>
+                      <div class="container">
+                        <div class="container d-flex justify-content-center">
+                            <button class="btn btn-outline-dark btn-lg mx-auto"><h4>Enviar</h4></button>
                         </div>
-                        <div class="form-group">
-                            <label for="nombre" class="lbltitle">Nombre y Apellidos</label>
-                            <input type="text"  placeholder="Nombre" class="form-control inputs">
-                        </div>
-                        <div class="form-group">
-                            <label for="nombre" class="lbltitle">Nombre y Apellidos</label>
-                            <input type="text"  placeholder="Nombre" class="form-control inputs">
-                        </div>
-                        <div class="form-group">
-                            <label for="nombre" class="lbltitle">Nombre y Apellidos</label>
-                            <textarea name="" id="" cols="30" rows="10" class="form-control inputs"></textarea>
-                        </div>
-                    </div>
-                </div>
+                      </div>
+                  </form>
             </div>
         </div>
+
+        <section class="redes p-2 my-5">
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <article class="card shadow-lg rounded-3 p-2" style="width: 25rem;">
+                    <img src="img/red1.svg" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-center">Redes</h4>
+                        <p class="card-text"><a href="#" class="fw-bolder size_t">Facebook <i class="fa-brands fa-facebook"></i></a></p>
+                    </div>
+                </article>
+                <article class="card mx-5 shadow-lg rounded-3 p-2" style="width: 25rem;">
+                    <img src="img/red2.svg" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-center ">Redes</h4>
+                        <p class="card-text"><a href="#" class="fw-bolder size_t">Instagram <i class="fa-brands fa-instagram-square"></i></a></p>
+                    </div>
+                </article>
+                <article class="card shadow-lg rounded-3 p-2" style="width: 25rem;">
+                    <img src="img/red3.svg" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-center">Redes</h4>
+                        <p class="card-text"><a href="#" class="fw-bolder size_t">Google Plus <i class="fa-brands fa-google-plus-square"></i></a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
     <footer class="foot">
         <h4 class="centrar_texto no-margin">Todos los derechos reservados 2022</h4>
@@ -65,5 +91,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9dc3b94eab.js" crossorigin="anonymous"></script>
 </body>
 </html>
