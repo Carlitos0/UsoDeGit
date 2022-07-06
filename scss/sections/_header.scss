@@ -1,0 +1,98 @@
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 55rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: $clr-blanco;
+    position: relative;
+    margin-bottom: 1.8rem;
+    background-attachment: fixed;
+    & .opacity{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0 0 0 / 60%);
+    }
+    &__barra{
+        padding-top: 2rem;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    & .nv{
+        @include tablet{
+            display: flex;
+            justify-content: space-around;
+            gap: 5rem;
+        }
+        & li{
+            display: block;
+            margin: 2rem 0;
+            font-size: 2rem;
+            @include tablet{
+                margin: 1 0;
+            }
+            & a{
+                color: $clr-blanco;
+                transition: color .5s ease,font-size .5s ease;
+                font-weight: 700;
+                &:hover{
+                    color: #ED6412;
+                    font-size: 2.2rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    & .logo{
+        padding: 2rem 0;
+        &_titulo{
+            color: $clr-blanco;
+            font-size: 4rem;
+            &:hover{
+                text-decoration: none;
+            }
+            & i{
+                @include tablet{
+                    display: none;
+                }
+            }
+        }
+        &__bold{
+            font-weight: 700;
+        }
+        &__titulo{
+            width: 100%;
+            font-weight: normal;
+            color: $clr-blanco; 
+            font-size: 4.8rem;
+        }
+    }
+    & .titulo{
+        @include celular{
+            font-size: 4rem;
+            margin-right: .5rem;
+        }
+        color: #FFFFFF;
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        transition: transform .7s ease;
+        &:hover{
+            transform: rotateY(360deg);
+        }
+    }
+    &__info{
+        @include tablet{
+            margin-top: 15rem;
+        }
+        & h3{
+            color: $clr-amarillo;
+            font-size: 4rem;
+        }
+        & p{
+            font-size: 2rem;
+        }
+    }
+} 

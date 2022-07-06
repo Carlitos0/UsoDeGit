@@ -1,0 +1,23 @@
+@import "../general/variables";
+
+
+.bg_dark{
+    background-color: $clr-dark;
+}
+.bg_gris{
+    background-color: $clr-gris1;
+} 
+.no-margen{
+    margin-bottom: 0;
+}
+.m_b_1{
+    @include tablet{
+        margin-bottom: .5rem;
+    }
+}
+/* @media (max-width: 768px){
+    .m_b_1{
+        margin-bottom: .5rem;
+    }
+} */
+

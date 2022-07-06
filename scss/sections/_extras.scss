@@ -1,0 +1,50 @@
+.bg-black{
+    background-color: $clr-negro;
+    box-shadow: 1px 19px 8px -5px rgba(0,0,0,0.75);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.color{
+    background-color: $clr-orange;
+    color: $clr-blanco;
+    font-size: 3rem;
+    transition: background-color .7s ease;
+    &:hover{
+        background-color: $clr-amarillo;
+    }
+}
+.cl_title{
+    color:  $clr-blanco;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.size{
+    width: 20rem;
+    height: 20rem;
+}
+.size_input{
+    padding: 1.8rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.size_t{
+    font-size: 1.8rem;
+    color: $clr-orange;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    transition: color .7s ease;
+    & i{
+        font-size: 3rem;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $clr-chocolate;
+    }
+}
+.texto_titulo{
+    color: $clr-secundario;
+    font-weight: 700;
+    letter-spacing: 4px;
+}

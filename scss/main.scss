@@ -1,0 +1,12 @@
+@import "./general/variables";
+@import "./general/reset";
+@import "./general/breakpoints";
+
+
+
+@import "./sections/header";
+@import "./sections/mainIndex";
+@import "./sections/footer";
+@import "./sections/extras";
+@import "./components/navigation.scss";
+@import "./components/cards_comentarios.scss";
