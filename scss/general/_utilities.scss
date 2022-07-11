@@ -1,0 +1,15 @@
+/* .btnFacebook{
+    color: map-get($map: $clr-redes, $key:"Facebook");
+}
+.btnInstagram{
+    color: map-get($map: $clr-redes, $key:"Instagram");
+}
+.btnGoogle{
+    color: map-get($map: $clr-redes, $key:"Google");
+} */
+
+@each $var,$color in $clr-redes {
+    .btn#{$var}{
+        color: $color;
+    }
+}

@@ -1,6 +1,8 @@
-@import "./general/variables";
+@use "./general/variables" as *;
+@import "./mixins";
 @import "./general/reset";
 @import "./general/breakpoints";
+@import "./general/utilities";
 
 
 

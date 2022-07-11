@@ -12,6 +12,7 @@
     transition: background-color .7s ease;
     &:hover{
         background-color: $clr-amarillo;
+        font-weight: map-get($map: $font-weights, $key: "bold");
     }
 }
 .cl_title{
@@ -30,7 +31,6 @@
 }
 .size_t{
     font-size: 1.8rem;
-    color: $clr-orange;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -45,6 +45,22 @@
 }
 .texto_titulo{
     color: $clr-secundario;
-    font-weight: 700;
     letter-spacing: 4px;
+    & h2{
+        font-weight: map-get($font-weights,"bold" );
+        font-size: 3rem;
+    }
+}
+
+.Autorcomentario{
+    @extend .texto_titulo;
+    color: $clr-orange;
+    letter-spacing: 3px;
+    @include tablet-2{
+        letter-spacing: 0;
+    }
+    @include celular_grande{
+        letter-spacing: 1px;
+        font-size: 2rem;
+    }
 }

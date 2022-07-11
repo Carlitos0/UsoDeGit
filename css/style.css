@@ -1,7 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /* Settings*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -34,7 +32,7 @@ li {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--fuenteHeading);
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -69,8 +67,29 @@ img {
   text-align: center;
 }
 
+/* .btnFacebook{
+    color: map-get($map: $clr-redes, $key:"Facebook");
+}
+.btnInstagram{
+    color: map-get($map: $clr-redes, $key:"Instagram");
+}
+.btnGoogle{
+    color: map-get($map: $clr-redes, $key:"Google");
+} */
+.btnFacebook {
+  color: #309CF7;
+}
+
+.btnInstagram {
+  color: #AF50BB;
+}
+
+.btnGoogle {
+  color: #E30F3F;
+}
+
 .header {
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/banner.webp);
   height: 55rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,9 +185,8 @@ img {
     margin-top: 15rem;
   }
 }
-.header__info h3 {
+.header__info h2 {
   color: #E9C11D;
-  font-size: 4rem;
 }
 .header__info p {
   font-size: 2rem;
@@ -267,7 +285,7 @@ img {
   background-color: #000;
   margin-top: 1.8rem;
 }
-.foot h4 {
+.foot h3 {
   color: #fff;
   padding: 3.5rem;
 }
@@ -287,6 +305,7 @@ img {
 }
 .color:hover {
   background-color: #E9C11D;
+  font-weight: 700;
 }
 
 .cl_title {
@@ -308,7 +327,6 @@ img {
 
 .size_t {
   font-size: 1.8rem;
-  color: #ED6412;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -322,10 +340,29 @@ img {
   color: #67430A;
 }
 
-.texto_titulo {
+.texto_titulo, .Autorcomentario {
   color: #128DED;
-  font-weight: 700;
   letter-spacing: 4px;
+}
+.texto_titulo h2, .Autorcomentario h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.Autorcomentario {
+  color: #ED6412;
+  letter-spacing: 3px;
+}
+@media (max-width: 768px) {
+  .Autorcomentario {
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 400px) {
+  .Autorcomentario {
+    letter-spacing: 1px;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -407,9 +444,9 @@ img {
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .m_b_1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 

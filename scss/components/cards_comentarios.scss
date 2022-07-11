@@ -11,8 +11,8 @@
     margin-bottom: 0;
 }
 .m_b_1{
-    @include tablet{
-        margin-bottom: .5rem;
+    @include tablet-2{
+        margin-bottom: 1rem;
     }
 }
 /* @media (max-width: 768px){

@@ -39,7 +39,7 @@
     & .info{
         & h2{
             color: $clr-orange;
-            font-weight: 700;
+            font-weight: map-get($font-weights, "bold");
         }
         & .servicios {
             display: grid;

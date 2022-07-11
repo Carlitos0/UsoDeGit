@@ -9,7 +9,13 @@ $clr-chocolate:#67430A;
 $clr-gris:#6B6B6B;
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 $fuentePrincipal: 'Roboto', sans-serif;
+$font-weights:("normal":400,"bold":700);
+
+$clr-redes:(
+    Facebook:#309CF7,
+    Instagram:#AF50BB,
+    Google:#E30F3F
+);

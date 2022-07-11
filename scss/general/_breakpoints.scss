@@ -4,9 +4,14 @@
     }
 }
 
-
 @mixin tablet {
     @media (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin tablet-2 {
+    @media (max-width: 768px){
         @content;
     }
 }
@@ -16,6 +21,7 @@
         @content;
     }
 }
+
 
 @mixin celular_grande{
     @media (max-width: 400px) {
